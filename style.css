@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    line-height: 1.5;
+    height: 100%;
+}
+
+#navbar{
+    position: fixed;
+    width: 22%;
+    border-right: solid lightgrey 3px;
+    height: 100%;
+    padding-bottom: 5.4em;
+}
+
+#navbar header{
+    overflow: hidden;
+    font-size: 1.7em;
+    margin: .4em;
+    padding: .3em;
+    text-align: center;
+}
+
+#navbar #nav{
+    list-style: none;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+#nav li .nav-link{
+    display: block;
+    padding: 1em 2em 1em;
+    width: 100%;
+    border-top: solid black 1px;
+    font-size: 14px;
+    color: rgb(56, 55, 53);
+    text-decoration: none;
+    height: 100%;
+}
+
+#main-doc{
+    position: relative;
+    width: 78%;
+    margin-left: 22%;
+}
+
+.main-section{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.main-section header{
+    font-size: 28px;
+    padding: 20px 30px 0px;
+}
+
+.main-section p{
+    margin: 20px 50px;
+}
+
+.main-section li{
+    margin: 20px 110px;
+}
+
+.main-section li ul li{
+    margin: 20px 55px;
+}
+
+.main-section code{
+    display: block;
+    margin: 20px 75px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
+    line-height:200%;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.main-section p code{
+    margin: 20px 30px;
+    padding: 15px 30px; 
+}
+
+@media only screen and (max-width: 768px)  {
+    body{
+        flex-direction: column;
+    }
+
+    #navbar{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        border-right: none;
+    }
+
+    #navbar #nav{
+        border: solid rgb(119, 118, 118) 2px;
+    }
+
+    #main-doc{
+        width: 100%;
+        margin-left: 0;
+    }
+}
